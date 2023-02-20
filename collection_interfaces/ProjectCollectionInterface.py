@@ -10,7 +10,7 @@ class ProjectCollectionInterface:
     #
 
     # iterate over each document in project collection and add resource field initialized to 0
-    def add_resource(self, resource_name):
+    def add_resource(self, proj_id, resource_name):
         raise NotImplementedError
 
     # get project name
@@ -29,8 +29,8 @@ class ProjectCollectionInterface:
     def set_description(self, proj_id, description):
         raise NotImplementedError
 
-    # return how many of a certain item a project has
-    def get_checked_out(self, proj_id, resource):
+    # return how many of a certain item a project has checked out
+    def get_checked_out(self, proj_id, resource_name):
         raise NotImplementedError
 
     # add to how many of a certain item a project has checked out
