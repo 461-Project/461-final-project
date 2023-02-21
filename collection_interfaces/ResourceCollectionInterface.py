@@ -7,7 +7,7 @@ class ResourceCollectionInterface:
     #
 
     # add new Document to Resource Collection
-    def new_resource(self, resource_name, capacity, availability):
+    def new_resource(self, resource_name, capacity):
         raise NotImplementedError
 
     # return resource's capacity
