@@ -1,8 +1,22 @@
 import React, { useState } from "react";
 import "./Styles/stylesheet.css"; // import stylesheet
 import { useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function LoginPage() {
+  const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#000080',
+        },
+        secondary: {
+            main: '#CAD2C5',
+        },
+    },
+  });
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [result, setResult] = useState("");
@@ -39,34 +53,47 @@ function LoginPage() {
 };
 
   return (
+  <ThemeProvider theme={theme}>
     <div className="form-container">
-      <h1>Login Page</h1>
+      <Typography variant="h1" align = "center" style={{ color: '#1C2331' }}>Login Page</Typography>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
+        <TextField
           id="username"
           name="username"
+          label="Username"
           value={username}
           onChange={(event) => setUsername(event.target.value)}
           required
+          fullWidth
+          margin="normal"
+          InputLabelProps={{
+            shrink: true,
+          }}
         />
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
+        <TextField
           id="password"
           name="password"
+          label="Password"
+          type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
           required
+          fullWidth
+          margin="normal"
+          InputLabelProps={{
+            shrink: true,
+          }}
         />
-        <button type="submit">Login</button>
-        <button type="button" id="create_account" onClick = {handleCreateAccount}>
+        <Button type="submit" variant="contained" color="primary">
+          Login
+        </Button>
+        <Button type="button" id="create_account" onClick={handleCreateAccount}>
           Create Account
-        </button>
+        </Button>
       </form>
-      <div id="result">{result}</div>
+      {result && <Typography variant="body1" color="error">{result}</Typography>}
     </div>
+   </ThemeProvider>
   );
 }
 
