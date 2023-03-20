@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dashboard h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #008080;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resource {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.resource h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.resource p {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.resource .availability {
+  color: #3297d3;
+  font-weight: bold;
+}
+
+.resource .checked-out {
+  color: #e36c60;
+  font-weight: bold;
+}
+
+.resource .action-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.resource .action-container input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6e6e6;
+}
+
+.resource .action-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #008080;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.resource .action-container button:hover {
+  background-color: #005a5a;
+}
