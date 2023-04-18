@@ -1,5 +1,5 @@
 # 461-final-project
-To run backend app:
+## To run backend app:
 
 Find /hardware_app/backend/main.py
 
@@ -20,7 +20,7 @@ npm start
 
 
 
-Project Plan
+## Project Plan
 Team Members:
 Erjian Gao
 Chenxiao Wang 
@@ -31,12 +31,12 @@ Sprint Velocity:
 Cycle: 1 week
 20 work items per sprint (4 per member)
 
-Collaboration Tools:
+### Collaboration Tools:
 Github
 Zoom
 Discord
 
-Implementation Methodologies: 
+###Implementation Methodologies: 
 Database: 
 MongoDB
 Back-end:
@@ -49,7 +49,7 @@ Testing:
 Postman
 Pycharm Testing Script
 
-Features(User Management):
+###  Features(User Management):
 
 
 A sign-in area where users can sign in by providing their user name, userid and password. If the user clicks on New User, display a pop-up that allows them to enter a new userid and password.
@@ -115,7 +115,7 @@ Create text-boxes for Check in and out requests for each HWSet
 Submit buttons that calls API and refreshes page to update page
 Display capacity and availability for each HWSet
 
-Potential Features:
+### Potential Features:
 password requirements
 amount of login attempts
 attach project ID to user ID
@@ -123,16 +123,16 @@ error message if incorrect password or project ID
 error message if project ID doesn’t exist
 deleting project (maybe require username and password in pop up)
 
-User Stories:
+### User Stories:
 As an ECE student, I want a way to keep track of the hardware I check out for my projects, so that I can be more organized in my work and know exactly what I have for each project.
 As an ECE student doing group work, I want a way to know which hardware my teammates have checked out, so that I do not check out extra materials for my project.
 
 
-High Level Design:
+## High Level Design:
 
 ![High Level Design Should be Here](/imgs/highLevelDesign.png)
 
-User Interface Design:
+## User Interface Design:
 ![Designs Should Be Here](/imgs/webExample.png)
 
 
