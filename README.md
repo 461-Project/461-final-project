@@ -1,4 +1,19 @@
 # 461-final-project
+To run backend app:
+Find /hardware_app/backend/main.py
+run main.py
+
+May need to change localhost to 127.0.0.1 in CreateAccount.js, CreateProject.js, LoginPage.js, ProjectDashboard.js, ProjectSignIn.js, and ProjectView.js
+
+
+To run Frontend:
+(I suggest cloning the repo rather than downloading the files, it works for me)
+
+cd hardware_app
+npm install (ensuring you have all the libraries)
+npm start
+
+
 Project Plan
 Team Members:
 Erjian Gao
